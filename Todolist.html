@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <link rel="stylesheet" href="Todolist.css">
+</head>
+<body>
+    <h1>Remember-list</h1>
+    <div class="main">
+        <div class="add-text">
+            Add mylist....
+            <button class="add-icon"onclick="openModel()"><ion-icon name="add-outline"></ion-icon></button>
+        </div>
+        <div class="text-container">
+        </div>
+        <div class="model-container">
+            <form class="model-form">
+                <p class="model-close"><ion-icon name="close-outline" onclick="closeModel()"></ion-icon></p>
+                <input class="model-input" placeholder="Enter your msg here" size="30">
+                <textarea class="model-description" id="" cols="32" rows="8" placeholder="Description..."></textarea>
+                <span class="error"></span>
+                <div class="model-buttons">
+                    <button class="add-button" type="submit">Add</button>
+                    <button class="close-button" onclick="closeModel()">Close</button>
+                </div>
+
+            </form>
+        </div>
+     </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="Todolist.js"></script>
+</body>
+</html>
